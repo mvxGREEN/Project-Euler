@@ -29,7 +29,7 @@ def is_palindrome?(num)
   one = text[0..(mid_index - 1)]
   two = text[mid_index..(text.length + 1)].reverse
 
-  one.eql? two ? true : false
+  one.eql? two
 end
 
 puts(largest_palindrome_product(100, 999).to_s)
